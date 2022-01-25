@@ -13,6 +13,8 @@
 	}	
 %>
 	Here is my favourite Video : <br>
-	<a href="https://www.youtube.com/watch?v=UprcpdwuwCg">https://www.youtube.com/watch?v=UprcpdwuwCg</a>
+	<a href="https://www.youtube.com/watch?v=UprcpdwuwCg">https://www.youtube.com/watch?v=UprcpdwuwCg</a> <br>
+	
+	<br><a href="login.jsp">Back to Login Page</a>
 </body>
 </html>

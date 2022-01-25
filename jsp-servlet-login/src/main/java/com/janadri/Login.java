@@ -9,15 +9,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.janadri.dao.LoginDao;
+
 @WebServlet("/Login")
 public class Login extends HttpServlet {
-	
+	  
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String uname = request.getParameter("uname");
 		String pass = request.getParameter("pass");
+		  LoginDao dao = new LoginDao();	
 		
-		if(uname.equals("Veeru")&&pass.equals("Janadri")) {
+		if(dao.check(uname, pass)) {
 			
 			HttpSession session = request.getSession();
 			session.setAttribute("username", uname);
